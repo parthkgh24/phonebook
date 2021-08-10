@@ -113,7 +113,7 @@ const App = () => {
         
       })
       .catch(error =>{
-        setmessagenotif(`This person ${person} was not able to get added`)
+        setmessagenotif(`This person ${newName} was not able to get added`)
         setTimeout(() =>{
           setmessagenotif(null)},5000)
           setPersons(persons.filter(p => p.id!==id))
